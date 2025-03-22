@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Generator</title>
+</head>
+<body>
+<h1>AI Resume Generator</h1>
+<form action="/generate-resume" method="post">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+
+    <label>Work Experience (describe briefly):</label><br>
+    <textarea name="experience" rows="5" cols="50" required></textarea><br><br>
+
+    <label>Skills (comma-separated):</label><br>
+    <input type="text" name="skills" required><br><br>
+
+    <label>Target Job Description (optional):</label><br>
+    <textarea name="job_description" rows="5" cols="50"></textarea><br><br>
+
+    <input type="submit" value="Generate Resume">
+</form>
+</body>
+</html>
